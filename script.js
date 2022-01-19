@@ -8,6 +8,10 @@ let firstNumber = "";
 let secondNumber = "";
 let operator = "";
 
+
+
+/* /// this part is going to be implemented later ///
+
 const summButton = document.getElementById("+");
 
 function summ(firstNumber, secondNumber) {
@@ -25,6 +29,7 @@ function multiply(firstNumber, secondNumber) {
 function divide(firstNumber, secondNumber) {
   return firstNumber / secondNumber;
 }
+*/
 
 numbers.forEach((numBtn) => {
   numBtn.addEventListener("click", function (event) {
@@ -65,11 +70,19 @@ operators.forEach((opBtn) => {
         operator 
       ) {
         case "+":
-          console.log(parseInt(firstNumber) + parseInt(secondNumber));
+          console.log(parseInt(firstNumber) + parseInt(secondNumber));  
           break;
 
         case "-":
           console.log(parseInt(firstNumber) - parseInt(secondNumber));
+          break;
+
+        case "*":
+          console.log(parseInt(firstNumber) * parseInt(secondNumber));
+          break;
+
+        case "/":
+          console.log(parseInt(firstNumber) / parseInt(secondNumber));
           break;
 
         default:
