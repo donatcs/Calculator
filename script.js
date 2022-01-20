@@ -31,6 +31,10 @@ function divide(firstNumber, secondNumber) {
 }
 */
 
+
+ 
+
+
 numbers.forEach((numBtn) => {
   numBtn.addEventListener("click", function (event) {
     if (operator === "") {
@@ -70,24 +74,30 @@ operators.forEach((opBtn) => {
         operator 
       ) {
         case "+":
-          console.log(parseInt(firstNumber) + parseInt(secondNumber));  
+          console.log(parseInt(firstNumber) + parseInt(secondNumber));
+          display.textContent = (parseInt(firstNumber) + parseInt(secondNumber))  
           break;
 
         case "-":
           console.log(parseInt(firstNumber) - parseInt(secondNumber));
+          display.textContent = (parseInt(firstNumber) - parseInt(secondNumber))  
           break;
 
         case "*":
           console.log(parseInt(firstNumber) * parseInt(secondNumber));
+          display.textContent = (parseInt(firstNumber) * parseInt(secondNumber))  
           break;
 
         case "/":
           console.log(parseInt(firstNumber) / parseInt(secondNumber));
+          display.textContent = (parseInt(firstNumber) / parseInt(secondNumber))  
           break;
 
-        default:
+         
+          default:
           break;
       }
     }
   });
 });
+
