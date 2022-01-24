@@ -65,7 +65,7 @@ function runCalculation(){
 
 
         case "/":
-          lastValue = parseInt(firstNumber) / parseInt(secondNumber);
+          lastValue = (parseInt(firstNumber) / parseInt(secondNumber)).toFixed(2);
           firstNumber = lastValue;
           secondNumber = "";
           display.textContent = lastValue;
@@ -98,3 +98,4 @@ resetBtn.addEventListener("click", () => {
   display.textContent = display.textContent.slice(0, -1);
 
 });
+

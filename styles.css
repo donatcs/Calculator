@@ -40,7 +40,8 @@ border: 1px solid rgba(255, 255, 255, 0.17);
   }
   .container .display {
  
-    font-size: 37pt;
+    font-size: 41pt;
+    color:rgb(39, 12, 39);
     text-align: right;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.17);
@@ -76,11 +77,53 @@ box-shadow: rgba(4, 6, 7, 0.582) 0px 20px 30px -18px;
 }
     
 
-  .container .buttons {
+  .container .buttons #equals {
 
-    width: 235px;
-    
+    width: 230px;
+    background-color: rgba(177, 128, 177, 0.356);
   }
+
+  .container .buttons #DEL {
+
+    position: relative;
+    top: 45px;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+
+  .container .buttons #plus {
+
+    position: relative;
+    top: 45px;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+
+  .container .buttons #minus {
+
+    position: relative;
+    top: 45px;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+
+
+  .container .buttons #AC {
+
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+
+  .container .buttons #divide {
+
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+
+
+  .container .buttons #times {
+
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.541);
+  }
+
 
 
 .container .buttons .operator:before {
@@ -100,6 +143,7 @@ box-shadow: rgba(4, 6, 7, 0.582) 0px 20px 30px -18px;
     border-radius: 40px;
     
 }
+
 
 
 .container .buttons .number:before {
