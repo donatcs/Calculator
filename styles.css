@@ -164,3 +164,13 @@ body {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+input[type=button] { width: 100%; }
+td[colspan="4"] { 
+    border: 1px solid;
+    text-align: right;
+}
+td[colspan="4"]:after {
+    content: '.';
+    visibility: hidden;
+}
