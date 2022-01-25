@@ -1,11 +1,9 @@
 body {
-    background: linear-gradient(to right, rgb(173, 143, 173), rgb(32, 86, 129));
+  background: linear-gradient(to right, rgb(173, 143, 173), rgb(32, 86, 129));
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 .container {
-  background: rgba(255, 255, 255, 0.363);
-  width: 320px; 
+  width: 320px;
   height: 500px;
   border-radius: 1.3em;
   margin: 0 auto;
@@ -13,145 +11,98 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.08);
   box-shadow: rgba(4, 6, 7, 0.582) 0px 20px 30px -10px;
-  border: solid rgba(255,255,255,0.3) 1px;
-
-}   
-
-.container {
-
-background: rgba(255, 255, 255, 0.08);
-border-radius: 16px;
-box-shadow: rgba(4, 6, 7, 0.582) 0px 20px 30px -10px;
-backdrop-filter: blur(9.3px);
-border: 1px solid rgba(255, 255, 255, 0.17);
+  backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
 }
 
 .container .display {
-    width: 100%;
-    height: 140px;
-    width: 320px;
-    box-shadow: inset 2px 2px 5px #babecc,
-                inset -5px -5px 10px #ffffff73;
-    background-color: white;
-    border-radius: 0.3em;
-    
-    
-  }
-  .container .display {
- 
-    font-size: 41pt;
-    color:rgb(39, 12, 39);
-    text-align: right;
-    font-weight: bold;
-    border: 1px solid rgba(255, 255, 255, 0.17);
-  }
-
-
-  .buttons {
-    display: grid;
-    grid-template-columns:  70px 70px 70px 70px;
-    grid-gap: 0.8em;
-    border-radius: 0.35em;
-   
-    
-
-  }
-  .container .buttons .operator, .container .buttons .number  {
-    width: 70px;
-    height: 52px;
-    border: rgb(173, 143, 173);
-    border-width: 1px;
-    color: rgb(12, 0, 0);
-    cursor: pointer;
-    position: relative;
-    border-radius: 20px;
-    top: -20px;
-    font-weighT: bold;
-background: transparent;
-border-radius: 50px;
-backdrop-filter: blur(9.3px);
-box-shadow: rgba(4, 6, 7, 0.582) 0px 20px 30px -18px;
-    font-size: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.17);
+  width: 100%;
+  height: 140px;
+  width: 320px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+  background-color: white;
+  border-radius: 0.3em;
 }
-    
+.container .display {
+  font-size: 41pt;
+  color: rgb(39, 12, 39);
+  text-align: right;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+}
 
-  .container .buttons #equals {
+.buttons {
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-gap: 0.8em;
+  border-radius: 0.35em;
+}
+.container .buttons .operator,
+.container .buttons .number {
+  width: 70px;
+  height: 52px;
+  border: rgb(173, 143, 173);
+  border-width: 1px;
+  color: rgb(12, 0, 0);
+  cursor: pointer;
+  position: relative;
+  border-radius: 20px;
+  top: -20px;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 50px;
+  backdrop-filter: blur(9.3px);
+  box-shadow: rgba(4, 6, 7, 0.582) 0px 20px 30px -18px;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+}
 
-    width: 230px;
-    background-color: rgba(177, 128, 177, 0.356);
-  }
+.container .buttons #equals {
+  width: 230px;
+  background-color: rgba(177, 128, 177, 0.356);
+}
 
-  .container .buttons #DEL {
+.container .buttons #DEL {
+  position: relative;
+  top: 45px;
+  background-color: rgba(255, 255, 255, 0.541);
+}
 
-    position: relative;
-    top: 45px;
-    background-color: rgba(255, 255, 255, 0.541);
-  }
+.container .buttons #plus {
+  position: relative;
+  top: 45px;
+  background-color: rgba(255, 255, 255, 0.541);
+}
 
-  .container .buttons #plus {
+.container .buttons #minus {
+  position: relative;
+  top: 45px;
+  background-color: rgba(255, 255, 255, 0.541);
+}
 
-    position: relative;
-    top: 45px;
-    background-color: rgba(255, 255, 255, 0.541);
-  }
+.container .buttons #AC {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.541);
+}
 
-  .container .buttons #minus {
+.container .buttons #divide {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.541);
+}
 
-    position: relative;
-    top: 45px;
-    background-color: rgba(255, 255, 255, 0.541);
-  }
-
-
-  .container .buttons #AC {
-
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.541);
-  }
-
-  .container .buttons #divide {
-
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.541);
-  }
-
-
-  .container .buttons #times {
-
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.541);
-  }
-
-
+.container .buttons #times {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.541);
+}
 
 .container .buttons .operator:before {
-    content: '';
-    background: linear-gradient(98deg,white, rgb(255, 255, 255));
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(0px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 40px;
-    
-}
-
-
-
-.container .buttons .number:before {
-  content: '';
-  background: linear-gradient(98deg,white, rgb(255, 255, 255));
+  content: "";
+  background: linear-gradient(98deg, white, rgb(255, 255, 255));
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(0px);
@@ -159,70 +110,83 @@ box-shadow: rgba(4, 6, 7, 0.582) 0px 20px 30px -18px;
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 40px;
-  
+}
+
+.container .buttons .number:before {
+  content: "";
+  background: linear-gradient(98deg, white, rgb(255, 255, 255));
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(0px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 40px;
 }
 
 .container .buttons .operator:active {
-    color: #000
+  color: #000;
 }
 
 .container .buttons .operator:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .container .buttons .operator:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .container .buttons .operator:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
 
 .container .buttons .number:active {
-    color: #000
+  color: #000;
 }
 
 .container .buttons .number:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .container .buttons .number:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .container .buttons .number:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+                background-position: 0 0;
+  }
+  50% {
+                background-position: 400% 0;
+  }
+  100% {
+                background-position: 0 0;
+  }
 }
-
-/* AFTER THIS */
